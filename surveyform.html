@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Soccer Signup Survey</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+
+<body>
+    <h1 id="title">Soccer Signup Survey</h1>
+    <hr>
+    <p id="description">Register your team for our fall soccer tournament</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <br><label id="email-label" for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+            <label id="number-label" for="age">Age</label>
+            <input type="number" id="number" placeholder="Enter your age" pattern="[1-9]" min="1" max="3">
+        </fieldset>
+        <fieldset>
+            <label class="shirt">Shirt size
+                <select id="dropdown">
+                    <option>select a size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="problem">
+            <div class="hear">How did you hear about us?</div>
+
+            <label>Internet<input type="radio" name="hear" value="internet"></label>
+            <label>Friend<input type="radio" name="hear" value="friend"></label>
+            <label>Poster<input type="radio" name="hear" value="poster"></label>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label for="number" class="players">How many players are on your team?<input id="number" type="textarea"
+                    pattern="[1-9]" min-length="1" max-length="3"></label>
+        </fieldset>
+        <fieldset>
+            <div class="food">What foods would you like to see there?</div>
+            <br>
+            <label>Nachos<input type="checkbox" value="nachos"></label><br>
+            <label>Bbq<input type="checkbox" value="bbq"></label><br>
+            <label>Pizza<input type="checkbox" value="pizza"></label><br>
+            <label>Burgers<input type="checkbox" value="burgers"></label><br>
+            <label>Funnel cakes<input type="checkbox" value="funnel cakes"></label>
+        </fieldset>
+        <fieldset>
+            <div class="question">Submit any questions or comments</div>
+            <textarea>
+       </textarea>
+        </fieldset>
+        <div class="button"><button id="submit" type="submit">Submit</button></div>
+        <hr>
+    </form>
+
+
+</body>
+
+</html>
